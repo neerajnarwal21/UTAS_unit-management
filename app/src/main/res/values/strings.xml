@@ -1,0 +1,67 @@
+<resources>
+    <string name="app_name">UTAS Tutorial marking</string>
+    <string name="title_activity_main2">MainActivity</string>
+    <string name="title_tutorial">Tutorials</string>
+    <string name="title_summary">Summary</string>
+    <string name="title_students">Students</string>
+    <string name="configure_week_tutorial">Configure Week tutorial</string>
+    <string name="are_you_sure_want_to_exit">Are you sure you want to exit?</string>
+    <string name="yes">Yes</string>
+    <string name="no">No</string>
+    <string name="next">Next</string>
+    <string name="select_no_of_checkpoints">Select no of Checkpoints</string>
+    <string name="select_tutorial_type">Select Tutorial type</string>
+    <string name="select_tutorial_week">Select Tutorial week</string>
+    <string name="no_student_added">No student added in the system\n\nAdd a student using\n+\nbutton</string>
+    <string name="no_tutorial_added">No weekly record in the system\n\nAdd a week using\n+\nbutton</string>
+    <string name="add_student">Add Student</string>
+    <string name="student_details">Student Details</string>
+    <string name="weekly_details">Weekly Detail</string>
+    <string name="name">Name</string>
+    <string name="student_id">Student ID</string>
+    <string name="enter_max_score_for_tutorial">Enter max score for tutorial</string>
+
+    <string-array name="week_select">
+        <item>Week 1</item>
+        <item>Week 2</item>
+        <item>Week 3</item>
+        <item>Week 4</item>
+        <item>Week 5</item>
+        <item>Week 6</item>
+        <item>Week 7</item>
+        <item>Week 8</item>
+        <item>Week 9</item>
+        <item>Week 10</item>
+        <item>Week 11</item>
+        <item>Week 12</item>
+        <item>Week 13</item>
+    </string-array>
+    <string-array name="tute_select">
+        <item>Attendance</item>
+        <item>Checkpoints</item>
+        <item>Score</item>
+        <item>Grades</item>
+        <item>Grades(A-F)</item>
+    </string-array>
+    <string-array name="checks_select">
+        <item>1</item>
+        <item>2</item>
+        <item>3</item>
+        <item>4</item>
+    </string-array>
+    <string-array name="grades">
+        <item>HD+</item>
+        <item>HD</item>
+        <item>DN</item>
+        <item>CR</item>
+        <item>PP</item>
+        <item>NN</item>
+    </string-array>
+    <string-array name="grades_2">
+        <item>A</item>
+        <item>B</item>
+        <item>C</item>
+        <item>D</item>
+        <item>F</item>
+    </string-array>
+</resources>
