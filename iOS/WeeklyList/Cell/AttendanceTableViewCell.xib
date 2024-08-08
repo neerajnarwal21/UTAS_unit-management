@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="17701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17703"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" rowHeight="125" id="KGk-i7-Jjw" customClass="AttendanceTableViewCell" customModule="UTAS_Tutorial_marking" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="392" height="125"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="392" height="125"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Wnt-kT-2pA">
+                        <rect key="frame" x="16" y="10" width="360" height="105"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="6wD-gC-672">
+                                <rect key="frame" x="8" y="27.5" width="50" height="50"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="6wD-gC-672" secondAttribute="height" multiplier="1:1" id="lf8-VY-1L6"/>
+                                    <constraint firstAttribute="height" constant="50" id="qMA-QH-pAh"/>
+                                </constraints>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Week1" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="3jr-hO-64x">
+                                <rect key="frame" x="66" y="21" width="128" height="21"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="128" id="0ai-UU-2zY"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Attendance" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="yqy-Ze-8S5">
+                                <rect key="frame" x="66" y="48" width="69.5" height="16"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="13"/>
+                                <color key="textColor" white="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <color key="highlightedColor" white="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="wCE-E5-bq6">
+                                <rect key="frame" x="336" y="41.5" width="16" height="22"/>
+                                <state key="normal" image="uncheck"/>
+                                <connections>
+                                    <action selector="didTapCheckUncheck:" destination="KGk-i7-Jjw" eventType="touchUpInside" id="R1h-GM-1Z6"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="3jr-hO-64x" firstAttribute="leading" secondItem="6wD-gC-672" secondAttribute="trailing" constant="8" id="3V5-fN-Sn7"/>
+                            <constraint firstItem="yqy-Ze-8S5" firstAttribute="leading" secondItem="3jr-hO-64x" secondAttribute="leading" id="3kT-zi-zgN"/>
+                            <constraint firstItem="yqy-Ze-8S5" firstAttribute="top" secondItem="3jr-hO-64x" secondAttribute="bottom" constant="6" id="CHJ-gF-sUq"/>
+                            <constraint firstItem="3jr-hO-64x" firstAttribute="centerY" secondItem="6wD-gC-672" secondAttribute="centerY" multiplier="0.6" id="HWk-1S-yat"/>
+                            <constraint firstItem="6wD-gC-672" firstAttribute="centerY" secondItem="Wnt-kT-2pA" secondAttribute="centerY" id="Ufg-F6-iUs"/>
+                            <constraint firstAttribute="trailing" secondItem="wCE-E5-bq6" secondAttribute="trailing" constant="8" id="VgE-GB-G8B"/>
+                            <constraint firstItem="6wD-gC-672" firstAttribute="leading" secondItem="Wnt-kT-2pA" secondAttribute="leading" constant="8" id="f5G-s6-QFg"/>
+                            <constraint firstItem="wCE-E5-bq6" firstAttribute="centerY" secondItem="Wnt-kT-2pA" secondAttribute="centerY" id="gIQ-wh-bBd"/>
+                        </constraints>
+                        <userDefinedRuntimeAttributes>
+                            <userDefinedRuntimeAttribute type="color" keyPath="borderColor">
+                                <color key="value" white="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            </userDefinedRuntimeAttribute>
+                            <userDefinedRuntimeAttribute type="number" keyPath="borderWidth">
+                                <integer key="value" value="4"/>
+                            </userDefinedRuntimeAttribute>
+                            <userDefinedRuntimeAttribute type="number" keyPath="shadowOpacity">
+                                <real key="value" value="2"/>
+                            </userDefinedRuntimeAttribute>
+                            <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                <real key="value" value="10"/>
+                            </userDefinedRuntimeAttribute>
+                        </userDefinedRuntimeAttributes>
+                    </view>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="Wnt-kT-2pA" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="10" id="7Ko-0Z-EAG"/>
+                    <constraint firstItem="Wnt-kT-2pA" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="16" id="Csj-sV-6I3"/>
+                    <constraint firstAttribute="trailing" secondItem="Wnt-kT-2pA" secondAttribute="trailing" constant="16" id="VT6-bF-CQH"/>
+                    <constraint firstAttribute="bottom" secondItem="Wnt-kT-2pA" secondAttribute="bottom" constant="10" id="dT0-ak-hnY"/>
+                </constraints>
+            </tableViewCellContentView>
+            <viewLayoutGuide key="safeArea" id="njF-e1-oar"/>
+            <connections>
+                <outlet property="checkButton" destination="wCE-E5-bq6" id="0uY-de-rEr"/>
+                <outlet property="profilePic" destination="6wD-gC-672" id="NBg-dV-4C6"/>
+                <outlet property="shadowView" destination="Wnt-kT-2pA" id="aCv-eR-jfB"/>
+                <outlet property="studentId" destination="yqy-Ze-8S5" id="5uv-xN-ZWt"/>
+                <outlet property="studentName" destination="3jr-hO-64x" id="jLb-Zq-dXP"/>
+            </connections>
+            <point key="canvasLocation" x="81.159420289855078" y="61.941964285714285"/>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <image name="uncheck" width="16" height="16"/>
+    </resources>
+</document>

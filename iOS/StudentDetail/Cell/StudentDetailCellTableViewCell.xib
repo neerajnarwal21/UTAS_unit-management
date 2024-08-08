@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="17701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17703"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="StudentDetailCellTableViewCell" rowHeight="213" id="KGk-i7-Jjw" customClass="StudentDetailCellTableViewCell" customModule="UTAS_Tutorial_marking" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="640" height="213"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="640" height="213"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="3Ke-ye-tKU">
+                        <rect key="frame" x="8" y="10" width="624" height="193"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Week1" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="335-Cw-OWI">
+                                <rect key="frame" x="8" y="74.5" width="128" height="21"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="128" id="Mdu-fA-dhD"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Attendance" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="pBk-wX-sEZ">
+                                <rect key="frame" x="8" y="101.5" width="69.5" height="16"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="13"/>
+                                <color key="textColor" white="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <color key="highlightedColor" white="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Attendance" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="XM6-AY-cMo">
+                                <rect key="frame" x="546.5" y="88.5" width="69.5" height="16"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="13"/>
+                                <color key="textColor" white="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <color key="highlightedColor" white="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="XM6-AY-cMo" firstAttribute="centerY" secondItem="3Ke-ye-tKU" secondAttribute="centerY" id="J31-KE-6Wn"/>
+                            <constraint firstAttribute="trailing" secondItem="XM6-AY-cMo" secondAttribute="trailing" constant="8" id="NJk-Wo-ldO"/>
+                            <constraint firstItem="335-Cw-OWI" firstAttribute="centerY" secondItem="3Ke-ye-tKU" secondAttribute="centerY" multiplier="0.88" id="YXJ-7q-Lnw"/>
+                            <constraint firstItem="pBk-wX-sEZ" firstAttribute="top" secondItem="335-Cw-OWI" secondAttribute="bottom" constant="6" id="bte-KX-xzE"/>
+                            <constraint firstItem="335-Cw-OWI" firstAttribute="leading" secondItem="3Ke-ye-tKU" secondAttribute="leading" constant="8" id="sLM-kV-QNl"/>
+                            <constraint firstItem="pBk-wX-sEZ" firstAttribute="leading" secondItem="335-Cw-OWI" secondAttribute="leading" id="w7K-gt-gkR"/>
+                        </constraints>
+                        <userDefinedRuntimeAttributes>
+                            <userDefinedRuntimeAttribute type="color" keyPath="borderColor">
+                                <color key="value" white="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            </userDefinedRuntimeAttribute>
+                            <userDefinedRuntimeAttribute type="number" keyPath="borderWidth">
+                                <integer key="value" value="4"/>
+                            </userDefinedRuntimeAttribute>
+                            <userDefinedRuntimeAttribute type="number" keyPath="shadowOpacity">
+                                <real key="value" value="2"/>
+                            </userDefinedRuntimeAttribute>
+                            <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                <real key="value" value="10"/>
+                            </userDefinedRuntimeAttribute>
+                        </userDefinedRuntimeAttributes>
+                    </view>
+                </subviews>
+                <constraints>
+                    <constraint firstAttribute="trailing" secondItem="3Ke-ye-tKU" secondAttribute="trailing" constant="8" id="Ibm-KR-5bQ"/>
+                    <constraint firstItem="3Ke-ye-tKU" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="10" id="SNs-tc-t0Z"/>
+                    <constraint firstAttribute="bottom" secondItem="3Ke-ye-tKU" secondAttribute="bottom" constant="10" id="gCS-KC-MEo"/>
+                    <constraint firstItem="3Ke-ye-tKU" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="8" id="jUp-Rb-ZvJ"/>
+                </constraints>
+            </tableViewCellContentView>
+            <viewLayoutGuide key="safeArea" id="njF-e1-oar"/>
+            <connections>
+                <outlet property="scoreLabel" destination="XM6-AY-cMo" id="4YH-Vy-pw4"/>
+                <outlet property="shadowView" destination="3Ke-ye-tKU" id="R3p-le-mnX"/>
+                <outlet property="tutorialTypeLabel" destination="pBk-wX-sEZ" id="oM6-kA-N5h"/>
+                <outlet property="weeklabel" destination="335-Cw-OWI" id="0NI-ZP-Cs7"/>
+            </connections>
+            <point key="canvasLocation" x="-85.507246376811594" y="112.16517857142857"/>
+        </tableViewCell>
+    </objects>
+</document>
